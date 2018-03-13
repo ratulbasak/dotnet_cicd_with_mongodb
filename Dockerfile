@@ -25,5 +25,6 @@ EXPOSE 5000
 #WORKDIR /api
 #COPY --from=build-env /app/out .
 #COPY /app/bin/Release/netcoreapp2.0/ /app/
+
 ENTRYPOINT dotnet /app/bin/Release/netcoreapp2.0/NotebookAppApi.dll
 #CMD ["/usr/bin/dotnet", "NotebookAppApi.dll"]
