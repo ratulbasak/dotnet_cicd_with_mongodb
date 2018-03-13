@@ -69,7 +69,7 @@ namespace NotebookAppApi.Data
                 DeleteResult actionResult = await _context.Notes.DeleteOneAsync(
                      Builders<Note>.Filter.Eq("Id", id));
 
-                return actionResult.IsAcknowledged 
+                return actionResult.IsAcknowledged
                     && actionResult.DeletedCount > 0;
             }
             catch (Exception ex)
@@ -113,7 +113,7 @@ namespace NotebookAppApi.Data
             }
             catch (Exception ex)
             {
-                // log or manage the exception
+                //// log or manage the exception
                 throw ex;
             }
         }
