@@ -1,5 +1,4 @@
-# This is the base image which determines from which Docker image the container should derive.
-#FROM microsoft/aspnetcore-build:2.0
+
 FROM microsoft/dotnet:latest
 
 # Copy the files and folders from current directory to "app" directory

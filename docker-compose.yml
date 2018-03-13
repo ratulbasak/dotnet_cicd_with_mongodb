@@ -12,10 +12,10 @@ services:
             - dotnetapi
 
     dotnetapi:
-        image: apidocker
-        build:
-           context: .
-           dockerfile: ./Dockerfile
+        image: ratuliit42/apidocker
+        # build:
+        #    context: .
+        #    dockerfile: ./Dockerfile
         container_name: dotnetapi
         ports:
             - "5000:5000"
