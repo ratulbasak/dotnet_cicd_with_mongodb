@@ -1,4 +1,3 @@
-
 FROM microsoft/dotnet:latest
 
 # Copy the files and folders from current directory to "app" directory
